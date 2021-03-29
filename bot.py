@@ -36,7 +36,7 @@ def check_new_stats():
             couv_dose1=str(new_data[len(new_data)-1]["couv_dose1"])
 
             date=str(new_data[len(new_data)-1]["jour"])
-            text_to_push= "Stats du "+date+", aujourd'hui "+"\n- "+ n_dose1+" 1ères doses ont été injectées ("+ n_cum_dose1+" au total)"+ "\n- " + n_dose2+" 2èmes doses ("+ n_cum_dose2+" au total) "+ "\n- " + couv_dose1+ "% de la population a reçu au moins 1 dose"
+            text_to_push= "Stats du "+date+", aujourd'hui "+"\n- "+ n_dose1+" 1ères doses ont été injectées ("+ n_cum_dose1+" au total)"+ "\n- " + n_dose2+" 2èmes doses ("+ n_cum_dose2+" au total) "+ "\n- " + couv_dose1+ "% de la population a reçu au moins 1 dose\n#vaccin #vaccination #astrazeneca #pfizer #moderna"
             api.update_status(status=text_to_push)
                 
 
