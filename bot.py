@@ -36,11 +36,12 @@ def check_new_stats():
             couv_dose1 = new_data[len(new_data)-1]["couv_dose1"]
 
             date=str(new_data[len(new_data)-1]["jour"])
-            text_to_push = f"Stats du {date}, aujourd'hui \n" \
-                           f"- {n_dose1} 1ères doses ont été injectées ({n_cum_dose1} au total)\n" \
-                           f"- {n_dose2} 2èmes doses ({n_cum_dose2} au total)\n" \
-                           f"- {couv_dose1}% de la population a reçu au moins 1 dose\n" \
+            text_to_push = f"Stats du {date} \U0001F489, hier :\n" \
+                           f"\U0001F4CC {n_dose1} 1ères doses ont été injectées ({n_cum_dose1} au total)\n" \
+                           f"\U0001F4CC {n_dose2} 2èmes doses ({n_cum_dose2} au total)\n" \
+                           f"\U0001F465 {couv_dose1}% de la population a reçu au moins 1 dose\n" \
                            f" #vaccin #vaccination #astrazeneca #pfizer #moderna"
+            print(text_to_push)
                 
 
 if __name__ == "__main__":
