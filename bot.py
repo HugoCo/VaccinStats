@@ -41,7 +41,7 @@ def check_new_stats():
                            f"\U0001F4CC {n_dose2} 2èmes doses ({n_cum_dose2} au total)\n" \
                            f"\U0001F465 {couv_dose1}% de la population a reçu au moins 1 dose\n" \
                            f" #vaccin #vaccination #astrazeneca #pfizer #moderna"
-            print(text_to_push)
+            api.update_status(status=text_to_push)
                 
 
 if __name__ == "__main__":
